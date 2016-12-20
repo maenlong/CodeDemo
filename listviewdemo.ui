@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ListViewDemo</class>
+ <widget class="QWidget" name="ListViewDemo">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>782</width>
+    <height>517</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <property name="leftMargin">
+    <number>10</number>
+   </property>
+   <property name="topMargin">
+    <number>10</number>
+   </property>
+   <property name="rightMargin">
+    <number>10</number>
+   </property>
+   <property name="bottomMargin">
+    <number>10</number>
+   </property>
+   <property name="spacing">
+    <number>10</number>
+   </property>
+   <item row="2" column="2">
+    <widget class="QListWidget" name="listWidget"/>
+   </item>
+   <item row="2" column="0">
+    <widget class="QListWidget" name="LeftView">
+     <item>
+      <property name="text">
+       <string>窗口2-项目1</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>窗口2-项目2</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>窗口2-项目3</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>窗口2-项目4</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>窗口2-项目5</string>
+      </property>
+     </item>
+    </widget>
+   </item>
+   <item row="1" column="0">
+    <widget class="QListWidget" name="RightView">
+     <item>
+      <property name="text">
+       <string>窗口1-项目1</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>窗口1-项目2</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>窗口1-项目3</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>窗口1-项目4</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>窗口1-项目5</string>
+      </property>
+     </item>
+    </widget>
+   </item>
+   <item row="1" column="2">
+    <widget class="QTreeWidget" name="treeWidget">
+     <property name="acceptDrops">
+      <bool>true</bool>
+     </property>
+     <property name="dragEnabled">
+      <bool>true</bool>
+     </property>
+     <property name="dragDropOverwriteMode">
+      <bool>false</bool>
+     </property>
+     <property name="dragDropMode">
+      <enum>QAbstractItemView::DragDrop</enum>
+     </property>
+     <property name="defaultDropAction">
+      <enum>Qt::MoveAction</enum>
+     </property>
+     <column>
+      <property name="text">
+       <string/>
+      </property>
+     </column>
+     <item>
+      <property name="text">
+       <string>11111</string>
+      </property>
+      <item>
+       <property name="text">
+        <string>1111</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>1111</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>1111</string>
+       </property>
+      </item>
+     </item>
+     <item>
+      <property name="text">
+       <string>22222</string>
+      </property>
+      <item>
+       <property name="text">
+        <string>2222</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>2222</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>2222</string>
+       </property>
+      </item>
+     </item>
+    </widget>
+   </item>
+   <item row="4" column="2">
+    <widget class="QPushButton" name="pushButton_2">
+     <property name="text">
+      <string>PushButton</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="1">
+    <widget class="DragWgt" name="DragOne" native="true">
+     <property name="minimumSize">
+      <size>
+       <width>200</width>
+       <height>200</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>200</width>
+       <height>200</height>
+      </size>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="1">
+    <widget class="DragWgt" name="DragTwo" native="true">
+     <property name="minimumSize">
+      <size>
+       <width>200</width>
+       <height>200</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>200</width>
+       <height>200</height>
+      </size>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="2">
+    <widget class="QPushButton" name="pushButton">
+     <property name="text">
+      <string>PushButton</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>DragWgt</class>
+   <extends>QWidget</extends>
+   <header location="global">dragwgt.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
